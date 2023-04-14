@@ -186,6 +186,7 @@ pub use crc_u8::CRCu8;
 #[allow(clippy::upper_case_acronyms, clippy::large_enum_variant)]
 /// This struct can help you compute a CRC value.
 #[cfg_attr(feature = "alloc", derive(Debug))]
+#[derive(Clone)]
 pub enum CRC {
     CRCu8(CRCu8),
     CRCu16(CRCu16),

@@ -10,6 +10,8 @@ use crate::{constants::crc_u32::*, lookup_table::LookUpTable};
 
 #[allow(clippy::upper_case_acronyms)]
 /// This struct can help you compute a CRC-32 (or CRC-x where **x** is equal or less than `32`) value.
+#[derive(Clone)]
+
 pub struct CRCu32 {
     by_table:        bool,
     poly:            u32,
